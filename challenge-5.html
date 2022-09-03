@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Challenge 5</title>
+    <style>
+      /* Style the weather report */
 
-<head>
-  <title>Challenge 5</title>
-  <style>
-    /* Style the weather report */
-
-    /* Apply the following styles to the body */
+      header {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        color: rgb(122, 203, 238);
+        background-color: rgb(53, 63, 60);
+        font-weight: bolder;
+        padding: 0.5em;
+      }
+      /* Apply the following styles to the body */
       /* font family 'Helvetica Neue' */
       /* font size 20px */
       /* line height 1.5 */
       /* Color #333 dark gray */
       /* background color #eee light gray */
-      
+      body {
+        font-family: Helvetica Neue;
+        font-size: 15px;
+        line-height: 1.5;
+        color: rgb(81, 75, 75);
+        background-color: #eee;
+      }
 
-    /* Style the dt (definition title) */
+      /* Style the dt (definition title) */
       /* Make the font really big! 2em */
       /* Make the background color light gray #ccc */
-      
 
-    /* Style the dd (definition) */
+      dt {
+        font-size: 2em;
+        background-color: rgb(122, 203, 238);
+      }
+
+      /* Style the dd (definition) */
       /* make the font big 1.5em */
       /* Background color #ddd */
       /* Remove the by setting margin: 0 */
-      
 
+      dd {
+        font-size: 1.5em;
+        background-color: #ddd;
+        margin: 0;
+      }
 
-    /* Style both the dt and dd */
-    /* Using the comma groups selectors */
-    dt, dd {
-      /* Add some space between these elements and their content */
-      /* padding: 0.5em */
-      
-    }
+      /* Style both the dt and dd */
+      /* Using the comma groups selectors */
+      dt,
+      dd {
+        /* Add some space between these elements and their content */
+        /* padding: 0.5em */
+        padding: 00.5em;
+      }
 
-    /* Stretch Challenges: 
+      /* Stretch Challenges: 
     
     - Adjust these styles to your taste. What do you think would 
     look best here? 
@@ -48,28 +70,28 @@
     - Use text-align to move the heading text to the right. 
     
      */
+    </style>
+  </head>
 
-  </style>
-</head>
+  <body>
+    <article>
+      <header>
+        <h1>Weather forecast for Seattle</h1>
+        <p>Three day forecast</p>
+      </header>
+      <dl>
+        <dt><time datetime="2018-03-03">03 March 2018</time></dt>
+        <dd>Rain.</dd>
 
-<body>
+        <dt><time datetime="2018-03-04">04 March 2018</time></dt>
+        <dd>Periods of rain.</dd>
 
-<article>
-  <header>
-    <h1>Weather forecast for Seattle</h1>
-    <p>Three day forecast</p>
-  </header>
-  <dl>
-    <dt><time datetime="2018-03-03">03 March 2018</time></dt>
-    <dd>Rain.</dd>
+        <dt><time datetime="2018-03-05">05 March 2018</time></dt>
+        <dd>Heavy rain.</dd>
 
-    <dt><time datetime="2018-03-04">04 March 2018</time></dt>
-    <dd>Periods of rain.</dd>
-
-    <dt><time datetime="2018-03-05">05 March 2018</time></dt>
-    <dd>Heavy rain.</dd>
-  </dl>
-</article>
-
-</body>
+        <dt><time datetime="2018-03-06">06 March 2018</time></dt>
+        <dd>Partially cloudy.</dd>
+      </dl>
+    </article>
+  </body>
 </html>
